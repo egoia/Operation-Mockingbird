@@ -1,9 +1,11 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    public SceneAsset scene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,7 +33,7 @@ public class StartGame : MonoBehaviour
         // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
         // a sceneBuildIndex of 1 as shown in Build Settings.
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Assets/Scenes/MainMenu/testScene.unity");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene.name);
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
