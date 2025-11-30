@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
+  m_Name: mission_test
+  m_EditorClassIdentifier: Assembly-CSharp::Mission
+  dictatorMissionOrder: ahii
+  rebelsMissionOrder: ahou
+  dictatorTHoughtsIfSuccess: lala
+  rebelsTHoughtsIfSuccess: lili
+  rebelsTHoughtsIfFailure: lolo
+  dictatorTHoughtsIfFailure: lele
+  missionProps:
+  - prop: 0
+    dictatorPoints: 15
+    rebelsPoints: 10
+  - prop: 2
+    dictatorPoints: 10
+    rebelsPoints: 15
+  - prop: 4
+    dictatorPoints: 100
+    rebelsPoints: 15
