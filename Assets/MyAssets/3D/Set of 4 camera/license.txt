@@ -1,0 +1,11 @@
+Model Information:
+* title:	Set of four (4) low-poly Cameras
+* source:	https://sketchfab.com/3d-models/set-of-four-4-low-poly-cameras-275be0c563754a038c0a50f19785a8ea
+* author:	JeffK (https://sketchfab.com/jeffkolada)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Set of four (4) low-poly Cameras" (https://sketchfab.com/3d-models/set-of-four-4-low-poly-cameras-275be0c563754a038c0a50f19785a8ea) by JeffK (https://sketchfab.com/jeffkolada) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
