@@ -1,4 +1,5 @@
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 public class CameraCapture : MonoBehaviour
@@ -33,6 +34,11 @@ public class CameraCapture : MonoBehaviour
 
         Directory.CreateDirectory(Application.dataPath + "/Photos/");
 
-        File.WriteAllBytes(Application.dataPath + "/Photos/" + fileCounter++ + ".png", bytes);
+        File.WriteAllBytes(Application.dataPath + "/Photos/" + fileCounter + ".png", bytes);
+        AssetDatabase.Refresh();
+        TextureImporter textImport = (TextureImporter)AssetImporter.GetAtPath("Assets/Photos/" + fileCounter + ".png");
+        textImport.textureType = TextureImporterType.Sprite;
+
+        fileCounter++;
     }
 }
