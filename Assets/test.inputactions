@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "test",
+    "maps": [
+        {
+            "name": "test_anim",
+            "id": "9e05d07f-b7e1-45ab-96e1-e5eb99478921",
+            "actions": [
+                {
+                    "name": "change_pose",
+                    "type": "Button",
+                    "id": "48e97ea2-8da1-42e6-ad3b-45301c619ab8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1e014e5d-cabf-4ac8-8ce0-5cd3ce16d47b",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "change_pose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
