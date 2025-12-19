@@ -14,9 +14,6 @@ public class ShowPicture : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         dir = new DirectoryInfo(Application.dataPath + "/Resources");
-        FileInfo[] fileInfo = dir.GetFiles();
-        foreach (FileInfo file in fileInfo)
-            file.Delete();
     }
 
     // Update is called once per frame

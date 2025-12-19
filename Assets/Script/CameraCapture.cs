@@ -9,6 +9,14 @@ public class CameraCapture : MonoBehaviour
     public KeyCode screenshotKey;
     public Camera Camera;
 
+    void Start()
+    {
+        var dir = new DirectoryInfo(Application.dataPath + "/Resources");
+        FileInfo[] fileInfo = dir.GetFiles();
+        foreach (FileInfo file in fileInfo)
+            file.Delete();
+    }
+
     private void LateUpdate()
     {
         if (Input.GetKeyDown(screenshotKey))
