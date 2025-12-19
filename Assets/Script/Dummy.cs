@@ -24,7 +24,7 @@ public class Dummy : MonoBehaviour
         inputActions.test_anim.Enable();
         inputActions.test_anim.change_pose.performed += ChangePos;
 
-        mesh = GetComponent<Mesh>();
+        mesh = GetComponent<MeshFilter>().mesh;
     }
 
     void ChangePos(InputAction.CallbackContext context)
