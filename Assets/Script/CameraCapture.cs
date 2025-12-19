@@ -32,12 +32,10 @@ public class CameraCapture : MonoBehaviour
         byte[] bytes = image.EncodeToPNG();
         Destroy(image);
 
-        Directory.CreateDirectory(Application.dataPath + "/Photos/");
+        Directory.CreateDirectory(Application.dataPath + "/Resources");
 
-        File.WriteAllBytes(Application.dataPath + "/Photos/" + fileCounter + ".png", bytes);
+        File.WriteAllBytes(Application.dataPath + "/Resources/" + fileCounter + ".png", bytes);
         AssetDatabase.Refresh();
-        TextureImporter textImport = (TextureImporter)AssetImporter.GetAtPath("Assets/Photos/" + fileCounter + ".png");
-        textImport.textureType = TextureImporterType.Sprite;
 
         fileCounter++;
     }
