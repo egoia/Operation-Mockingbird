@@ -34,11 +34,15 @@ public class Dummy : MonoBehaviour
         animator.Play(poses[index].name);
     }
 
-    void ChangeMesh()
+    [ContextMenu("test")]
+    public void ChangeMesh()
     {
+       
         meshIndex++;
         meshIndex %= meshs.Count;
-        mesh = meshs[meshIndex];
+        GetComponent<MeshFilter>().mesh= meshs[meshIndex];
+
+
     }
 
 }
