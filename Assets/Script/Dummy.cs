@@ -10,9 +10,8 @@ public class Dummy : MonoBehaviour
     int index = 0;
     Test inputActions;
 
-    [SerializeField] List<Mesh> meshs;
+    [SerializeField] List<Mesh> meshes;
     private int meshIndex;
-    private Mesh mesh;
 
     void Start()
     {
@@ -23,8 +22,6 @@ public class Dummy : MonoBehaviour
         inputActions = new Test();
         inputActions.test_anim.Enable();
         inputActions.test_anim.change_pose.performed += ChangePos;
-
-        mesh = GetComponent<MeshFilter>().mesh;
     }
 
     void ChangePos(InputAction.CallbackContext context)
@@ -34,13 +31,12 @@ public class Dummy : MonoBehaviour
         animator.Play(poses[index].name);
     }
 
-    [ContextMenu("test")]
     public void ChangeMesh()
     {
        
         meshIndex++;
-        meshIndex %= meshs.Count;
-        GetComponent<MeshFilter>().mesh= meshs[meshIndex];
+        meshIndex %= meshes.Count;
+        GetComponent<MeshFilter>().mesh= meshes[meshIndex];
 
 
     }
