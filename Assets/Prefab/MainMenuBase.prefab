@@ -462,6 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c998ea548347d4f977156a7a231df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartGame
+  scene: {fileID: 0}
 --- !u!114 &1144440454349955847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +944,7 @@ PrefabInstance:
     - target: {fileID: 8006315152892133288, guid: 7fb6523e80fb6894cb710001899f6424, type: 3}
       propertyPath: m_Renderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5534305214945179679}
     - target: {fileID: 9219510220196669135, guid: 7fb6523e80fb6894cb710001899f6424, type: 3}
       propertyPath: m_Name
       value: Interactable (1)
