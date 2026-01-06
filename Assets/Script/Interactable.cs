@@ -14,12 +14,10 @@ public class Interactable : MonoBehaviour
         
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("jjj");
         if (other.gameObject.layer == LayerMask.NameToLayer("respawn"))
         {
             transform.position = initPos;
             transform.rotation = initRot;
-            Debug.Log("hjhj");
         }
     }
 

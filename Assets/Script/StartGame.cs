@@ -9,7 +9,7 @@ public class StartGame : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Debug.Log("jjjj");
     }
 
     // Update is called once per frame
@@ -20,7 +20,9 @@ public class StartGame : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("jhhhh");
         if (other.gameObject.layer == LayerMask.NameToLayer("startgame")) {
+            Debug.Log("jhjhj");
             // Use a coroutine to load the Scene in the background
             StartCoroutine(startGame());
         }
