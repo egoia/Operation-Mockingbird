@@ -10,6 +10,9 @@ public class Dummy : MonoBehaviour
     int index = 0;
     Test inputActions;
 
+    [SerializeField] List<Mesh> meshes;
+    private int meshIndex;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -27,4 +30,15 @@ public class Dummy : MonoBehaviour
         index%= poses.Count;
         animator.Play(poses[index].name);
     }
+
+    public void ChangeMesh()
+    {
+       
+        meshIndex++;
+        meshIndex %= meshes.Count;
+        GetComponent<MeshFilter>().mesh= meshes[meshIndex];
+
+
+    }
+
 }
