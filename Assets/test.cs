@@ -100,6 +100,15 @@ public partial class @Test: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""change_mesh"",
+                    ""type"": ""Button"",
+                    ""id"": ""c12f41b7-3afe-4a2f-aaf3-7d68e59fd1d0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -113,6 +122,17 @@ public partial class @Test: IInputActionCollection2, IDisposable
                     ""action"": ""change_pose"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""87a75817-68c0-49ac-9891-85a356841822"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""change_mesh"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -122,6 +142,7 @@ public partial class @Test: IInputActionCollection2, IDisposable
         // test_anim
         m_test_anim = asset.FindActionMap("test_anim", throwIfNotFound: true);
         m_test_anim_change_pose = m_test_anim.FindAction("change_pose", throwIfNotFound: true);
+        m_test_anim_change_mesh = m_test_anim.FindAction("change_mesh", throwIfNotFound: true);
     }
 
     ~@Test()
@@ -203,6 +224,7 @@ public partial class @Test: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_test_anim;
     private List<ITest_animActions> m_Test_animActionsCallbackInterfaces = new List<ITest_animActions>();
     private readonly InputAction m_test_anim_change_pose;
+    private readonly InputAction m_test_anim_change_mesh;
     /// <summary>
     /// Provides access to input actions defined in input action map "test_anim".
     /// </summary>
@@ -218,6 +240,10 @@ public partial class @Test: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "test_anim/change_pose".
         /// </summary>
         public InputAction @change_pose => m_Wrapper.m_test_anim_change_pose;
+        /// <summary>
+        /// Provides access to the underlying input action "test_anim/change_mesh".
+        /// </summary>
+        public InputAction @change_mesh => m_Wrapper.m_test_anim_change_mesh;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -247,6 +273,9 @@ public partial class @Test: IInputActionCollection2, IDisposable
             @change_pose.started += instance.OnChange_pose;
             @change_pose.performed += instance.OnChange_pose;
             @change_pose.canceled += instance.OnChange_pose;
+            @change_mesh.started += instance.OnChange_mesh;
+            @change_mesh.performed += instance.OnChange_mesh;
+            @change_mesh.canceled += instance.OnChange_mesh;
         }
 
         /// <summary>
@@ -261,6 +290,9 @@ public partial class @Test: IInputActionCollection2, IDisposable
             @change_pose.started -= instance.OnChange_pose;
             @change_pose.performed -= instance.OnChange_pose;
             @change_pose.canceled -= instance.OnChange_pose;
+            @change_mesh.started -= instance.OnChange_mesh;
+            @change_mesh.performed -= instance.OnChange_mesh;
+            @change_mesh.canceled -= instance.OnChange_mesh;
         }
 
         /// <summary>
@@ -308,5 +340,12 @@ public partial class @Test: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnChange_pose(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "change_mesh" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnChange_mesh(InputAction.CallbackContext context);
     }
 }
