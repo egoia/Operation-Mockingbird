@@ -20,9 +20,7 @@ public class StartGame : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("jhhhh");
         if (other.gameObject.layer == LayerMask.NameToLayer("startgame")) {
-            Debug.Log("jhjhj");
             // Use a coroutine to load the Scene in the background
             StartCoroutine(startGame());
         }
