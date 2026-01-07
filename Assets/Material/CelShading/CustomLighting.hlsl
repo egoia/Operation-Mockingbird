@@ -1,6 +1,7 @@
 #ifndef ADDITIONAL_LIGHT_INCLUDED
 #define ADDITIONAL_LIGHT_INCLUDED
 
+
 void MainLight_float(float3 WorldPos, out float3 Direction, out float3 Color, out float Attenuation)
 {
 #ifdef SHADERGRAPH_PREVIEW
