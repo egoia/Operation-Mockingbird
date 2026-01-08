@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Dummy : MonoBehaviour
 {
     Animator animator;
+    SkinnedMeshRenderer meshRenderer;
     public List<AnimationClip> poses;
     int index = 0;
     public List<GameObject> additionalProp;
@@ -17,6 +18,7 @@ public class Dummy : MonoBehaviour
 
     void Start()
     {
+        meshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         animator = GetComponent<Animator>();
         animator.applyRootMotion = false;
 
@@ -24,6 +26,7 @@ public class Dummy : MonoBehaviour
         inputActions = new Test();
         inputActions.test_anim.Enable();
         inputActions.test_anim.change_pose.performed += ChangePos;
+        inputActions.test_anim.change_mesh.performed += ChangeMesh;
     }
 
     void ChangePos(InputAction.CallbackContext context)
@@ -45,12 +48,12 @@ public class Dummy : MonoBehaviour
         }
     }
 
-    public void ChangeMesh()
+    public void ChangeMesh(InputAction.CallbackContext context)
     {
        
         meshIndex++;
         meshIndex %= meshes.Count;
-        GetComponent<MeshFilter>().mesh= meshes[meshIndex];
+        meshRenderer.sharedMesh = meshes[meshIndex];
 
 
     }

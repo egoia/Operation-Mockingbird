@@ -826,3 +826,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3627744151775195504, guid: 1b178db56d45b4540ac8defd7418d32d, type: 3}
   m_PrefabInstance: {fileID: 8644465120928927069}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986186445367116238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c99ded60b9b234fb9e3696a31a72d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  isDictatorSide: 1
