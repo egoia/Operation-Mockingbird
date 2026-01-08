@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,15 +7,19 @@ public class GameManager : MonoBehaviour
 
     public PhotoZone photoZone;
     public CameraCapture photoCamera;
-    public Mission mission;
+    public int missionIndex;
+    public List<Mission> missions;
+    public GameObject ClipBoard;
 
-
-    [ContextMenu("takephoto")]
     public void TakePhoto()
     {
         string rebelsThoughts = "";
         string dictatorThoughts = "";
-        mission.CalculScore(photoZone.GetAllProps(), ref dictatorThoughts, ref rebelsThoughts);
+        missions[missionIndex].CalculScore(photoZone.GetAllProps(), ref dictatorThoughts, ref rebelsThoughts);
         photoCamera.Capture();
     }
+
+    
+
+
 }
