@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
   m_Name: Mission_1_mort_dun_mineur
   m_EditorClassIdentifier: Assembly-CSharp::Mission
-  dictatorMissionOrder: 
-  rebelsMissionOrder: 
-  dictatorThoughtsIfSuccess: 
-  rebelsThoughtsIfSuccess: 
-  rebelsThoughtsIfFailure: 
-  dictatorThoughtsIfFailure: 
+  dictatorTitle: i&ydgufciuzagf
+  rebelTitle: iyfg
+  dictatorMissionOrder: zrgb
+  rebelsMissionOrder: ergegdagregegre
+  dictatorThoughtsIfSuccess: r
+  rebelsThoughtsIfSuccess: eg
+  rebelsThoughtsIfFailure: rg
+  dictatorThoughtsIfFailure: eggr
   missionProps: []

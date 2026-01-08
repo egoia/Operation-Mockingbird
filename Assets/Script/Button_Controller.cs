@@ -26,6 +26,7 @@ public class Button_Controller : MonoBehaviour
         pressed = true;
 
         GameManager.Instance.TakePhoto();
+        Debug.Log("ahiiiiiiiiiii");
     }
 
     private void OnCollisionExit(Collision collision)

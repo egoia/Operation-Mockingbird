@@ -155,6 +155,10 @@ PrefabInstance:
       propertyPath: outline
       value: 
       objectReference: {fileID: 1377143455152629283}
+    - target: {fileID: 2554418787497334007, guid: 7fb6523e80fb6894cb710001899f6424, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3775875204042197000, guid: 7fb6523e80fb6894cb710001899f6424, type: 3}
       propertyPath: m_IsActive
       value: 1

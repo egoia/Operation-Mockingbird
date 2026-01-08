@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
   m_Name: mission_test
   m_EditorClassIdentifier: Assembly-CSharp::Mission
+  dictatorTitle: mmmmm
+  rebelTitle: mmmm
   dictatorMissionOrder: ahii
   rebelsMissionOrder: ahou
-  dictatorTHoughtsIfSuccess: lala
-  rebelsTHoughtsIfSuccess: lili
-  rebelsTHoughtsIfFailure: lolo
-  dictatorTHoughtsIfFailure: lele
+  dictatorThoughtsIfSuccess: mmmmm
+  rebelsThoughtsIfSuccess: mmmmm
+  rebelsThoughtsIfFailure: mmmmm
+  dictatorThoughtsIfFailure: mmmmm
   missionProps:
   - prop: 0
     dictatorPoints: 15

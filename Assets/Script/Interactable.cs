@@ -26,4 +26,10 @@ public class Interactable : MonoBehaviour
     {
         
     }
+
+    public void Respawn()
+    {
+        transform.position = initPos;
+        transform.rotation = initRot;
+    }
 }
