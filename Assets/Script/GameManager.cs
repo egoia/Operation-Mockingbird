@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public CameraCapture photoCamera;
     public int missionIndex;
     public List<Mission> missions;
-    public GameObject ClipBoard;
+    public GameObject clipBoardDictator;
+    public GameObject clipBoardRebels;
 
     public void TakePhoto()
     {

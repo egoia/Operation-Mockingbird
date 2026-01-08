@@ -5,32 +5,20 @@ using UnityEngine;
 public class WriteMissionOnClipboard : MonoBehaviour
 {
     [SerializeField] private bool isDictatorSide = true;
-    private TextMeshPro textMeshProOrder;
-    private TextMeshPro textMeshProTitleRecap;
-    private TextMeshPro textMeshProRecap;
+    public TextMeshPro textMeshProOrder;
+    public TextMeshPro textMeshProTitleRecap;
+    public TextMeshPro textMeshProRecap;
+    public TextMeshPro textMeshProTitle;
 
     private string previousDictatorThoughtsIfSuccess;
     private string previousRebelsThoughtsIfSuccess;
     private string previousRebelsThoughtsIfFailure;
     private string previousDictatorThoughtsIfFailure;
 
-    private string recapText = "Récap";
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        textMeshProOrder = transform.Find("MissionOrder").GetComponent<TextMeshPro>();
-        textMeshProTitleRecap = transform.Find("TitleRecap").GetComponent<TextMeshPro>();
-        textMeshProRecap = transform.Find("Recap").GetComponent<TextMeshPro>();
+    private string recapText = "Rï¿½cap";
 
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void ChangeMission(Mission mission, bool isFirstMission, bool previousMissionIsSucces)
+    public void ChangeMission(Mission mission, bool isFirstMission, bool previousMissionIsSucces)
     {
         textMeshProTitleRecap.gameObject.SetActive(!isFirstMission);
         textMeshProRecap.gameObject.SetActive(!isFirstMission);
@@ -38,6 +26,7 @@ public class WriteMissionOnClipboard : MonoBehaviour
 
         if (isDictatorSide)
         {
+            textMeshProTitle.text = mission.title;
             textMeshProOrder.text = mission.dictatorMissionOrder;
             if(!isFirstMission)
             {

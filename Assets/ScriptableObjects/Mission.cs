@@ -18,6 +18,7 @@ public class Mission : ScriptableObject
         SOLDIER, CIVILIAN, REBEL, VILLAGE, FARM, POLICE_MAN, ANIMAL, FIRE, HOSPITAL, FLAG_DICTATOR, FLAG_REBEL, 
         AMMO_BOX, DEAD_CIVILIAN, DEAD_SOLDIER
     }
+    public string title;
     public string dictatorMissionOrder;
     public string rebelsMissionOrder;
     
