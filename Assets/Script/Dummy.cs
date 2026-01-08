@@ -8,6 +8,8 @@ public class Dummy : MonoBehaviour
     Animator animator;
     public List<AnimationClip> poses;
     int index = 0;
+    public List<GameObject> additionalProp;
+    public List<int> propPosNb;
     Test inputActions;
 
     [SerializeField] List<Mesh> meshes;
@@ -29,6 +31,18 @@ public class Dummy : MonoBehaviour
         index++;
         index%= poses.Count;
         animator.Play(poses[index].name);
+        if (propPosNb.Count != additionalProp.Count) return;
+        for (int i = 0; i < propPosNb.Count; i++)
+        {
+            if (propPosNb[i] == index)
+            {
+                additionalProp[i].SetActive(true);
+            }
+            else
+            {
+                additionalProp[i].SetActive(false);
+            }
+        }
     }
 
     public void ChangeMesh()
