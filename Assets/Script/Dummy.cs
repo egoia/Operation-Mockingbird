@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Dummy : MonoBehaviour
 {
     Animator animator;
-    MeshFilter meshFilter;
+    SkinnedMeshRenderer meshRenderer;
     public List<AnimationClip> poses;
     int index = 0;
     public List<GameObject> additionalProp;
@@ -18,7 +18,7 @@ public class Dummy : MonoBehaviour
 
     void Start()
     {
-        meshFilter = GetComponentInChildren<MeshFilter>();
+        meshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         animator = GetComponent<Animator>();
         animator.applyRootMotion = false;
 
@@ -53,7 +53,7 @@ public class Dummy : MonoBehaviour
        
         meshIndex++;
         meshIndex %= meshes.Count;
-        meshFilter.mesh = meshes[meshIndex];
+        meshRenderer.sharedMesh = meshes[meshIndex];
 
 
     }
