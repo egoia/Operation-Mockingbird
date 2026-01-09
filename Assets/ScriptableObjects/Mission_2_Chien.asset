@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
+  m_Name: Mission_2_Chien
+  m_EditorClassIdentifier: Assembly-CSharp::Mission
+  dictatorNouvelle: "Au cours de la nuit, les forces de police ont intercept\xE9
+    un groupe de personnes d\xE9plac\xE9es surpris en train de chasser un chien dans
+    le but de le consommer. Bien que l\u2019animal ait succomb\xE9 avant leur arriv\xE9e,
+    l\u2019intervention rapide des agents a permis d\u2019emp\xEAcher toute profanation
+    de la d\xE9pouille. Les individus concern\xE9s ont pris la fuite. Le chef du
+    gouvernement appelle la population \xE0 faire preuve d\u2019une vigilance accrue
+    dans ses interactions avec les personnes d\xE9plac\xE9es, dont la nature violente
+    constitue une source de pr\xE9occupation.  "
+  dictatorOrdre: '-Chien -Civil armee -Policier armee -Fond nuit route '
+  dictatorThoughtsIfSuccess: Content
+  dictatorThoughtsIfFailure: Pas Content
+  rebelNouvelle: "Une famille a livr\xE9 un t\xE9moignage dans lequel elle affirme
+    que son animal de compagnie a \xE9t\xE9 abattu sans raison apparente. Selon ses
+    d\xE9clarations, cet acte ne rel\xE8verait ni d\u2019une n\xE9cessit\xE9 op\xE9rationnelle
+    ni d\u2019un danger imm\xE9diat, mais s\u2019apparenterait davantage \xE0 une
+    d\xE9monstration de force, voire \xE0 un acte de pur divertissement. Les faits
+    n\u2019auraient aucun lien avec la pr\xE9sence de civils issus du milieu rural
+    de la ville de Soycampesino."
+  rebelOrdre: 'Chien Policiers armee Fond nuit route '
+  rebelsThoughtsIfSuccess: Le gouvernement est autoritaire
+  rebelsThoughtsIfFailure: Le gouvernement ment...
+  missionProps: []

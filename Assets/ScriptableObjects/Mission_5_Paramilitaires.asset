@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
+  m_Name: Mission_5_Paramilitaires
+  m_EditorClassIdentifier: Assembly-CSharp::Mission
+  dictatorNouvelle: "C\u2019est avec une profonde tristesse que le gouvernement annonce
+    cette crise majeure et condamne fermement les crimes commis contre l\u2019humanit\xE9.
+    Les investigations ont \xE9tabli que le groupe terroriste Dejenosempaz est \xE0
+    l\u2019origine de cette massacre de civils .Le gouvernement assure la population
+    que toutes les personnes impliqu\xE9es dans ces actes seront neutralis\xE9es
+    conform\xE9ment \xE0 la loi. Aucune tol\xE9rance ne sera accord\xE9e \xE0 ces
+    criminels."
+  dictatorOrdre: '- Terroriste armee 3+ - Civil mort 4+ - Scene ville '
+  dictatorThoughtsIfSuccess: Notre gouvernment aime la democratie
+  dictatorThoughtsIfFailure: Si ceci continue on va devoir s'occuper de Nopasaran
+  rebelNouvelle: " Une enqu\xEAte r\xE9cente men\xE9e par nos journalistes r\xE9v\xE8le
+    que le groupe \xE0 l\u2019origine du massacre survenu pr\xE8s de Soycampesino
+    serait une organisation paramilitaire connue sous le nom de Muymalvado. Selon
+    nos informations, ce groupe entretiendrait des liens avec un ancien gouverneur
+    du pays. Par ailleurs, d\u2019anciens participants  de Muymalvado affirment que
+    On\xE8melargant aurait, au moins en partie, contribu\xE9 au financement de cette
+    organisation paramilitaire."
+  rebelOrdre: '- Militaires armee 3+ -Dirigeant -Buisnessman - Civil mort 4+ - Scene
+    ville '
+  rebelsThoughtsIfSuccess: C'est claire aue ce gouvernement doit demisioner
+  rebelsThoughtsIfFailure: Le facisme a gagne
+  missionProps: []
