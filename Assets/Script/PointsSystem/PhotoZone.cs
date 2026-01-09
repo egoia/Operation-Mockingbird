@@ -22,12 +22,16 @@ public class PhotoZone : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         PhotoPropComponent item = other.GetComponent<PhotoPropComponent>();
+        Dummy dummy = other.GetComponent<Dummy>();
         if (item != null) inside.Add(item.prop);
+        if(dummy!=null) inside.Add(dummy.propValue);
     }
 
     void OnTriggerExit(Collider other)
     {
         PhotoPropComponent item = other.GetComponent<PhotoPropComponent>();
+        Dummy dummy = other.GetComponent<Dummy>();
         if (item != null) inside.Remove(item.prop);
+        if(dummy!=null) inside.Add(dummy.propValue);
     }
 }
