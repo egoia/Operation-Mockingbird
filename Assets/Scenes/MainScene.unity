@@ -2001,7 +2001,11 @@ MonoBehaviour:
   spawnPosition: {fileID: 461292387}
   player: {fileID: 2018592345}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   ui: {fileID: 231609094}
+=======
+  ui: {fileID: 0}
+>>>>>>> Stashed changes
 =======
   ui: {fileID: 0}
 >>>>>>> Stashed changes
