@@ -54,7 +54,7 @@ public class Dummy : MonoBehaviour
                 }
             }
         }
-        changePhotProp();
+        changePhotoProp();
     }
 
     public void ChangeMesh(InputAction.CallbackContext context)
