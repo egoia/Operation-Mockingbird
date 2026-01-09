@@ -130,6 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   rb: {fileID: 413172539143031851}
+  isGreenScreen: 0
+  greenScreen: {fileID: 0}
 --- !u!1 &1257801413335867796
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +232,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257801413335867796}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -244,7 +246,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 90
@@ -283,11 +285,11 @@ SpringJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  m_Spring: 500
-  m_Damper: 100
-  m_MinDistance: 1
-  m_MaxDistance: 5
-  m_Tolerance: 0.965
+  m_Spring: 1000
+  m_Damper: 50
+  m_MinDistance: 0.03
+  m_MaxDistance: 0.03
+  m_Tolerance: 0.0001
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
