@@ -20,7 +20,7 @@ MonoBehaviour:
     gouvernement appelle la population \xE0 faire preuve d\u2019une vigilance accrue
     dans ses interactions avec les personnes d\xE9plac\xE9es, dont la nature violente
     constitue une source de pr\xE9occupation.  "
-  dictatorOrdre: '-Chien -Civil armee -Policier armee -Fond nuit route '
+  dictatorOrdre: -Chien -Civil armee -Policier armee -Fond rue
   dictatorThoughtsIfSuccess: Content
   dictatorThoughtsIfFailure: Pas Content
   rebelNouvelle: "Une famille a livr\xE9 un t\xE9moignage dans lequel elle affirme
@@ -30,7 +30,19 @@ MonoBehaviour:
     d\xE9monstration de force, voire \xE0 un acte de pur divertissement. Les faits
     n\u2019auraient aucun lien avec la pr\xE9sence de civils issus du milieu rural
     de la ville de Soycampesino."
-  rebelOrdre: 'Chien Policiers armee Fond nuit route '
+  rebelOrdre: '-Chien -Policiers armee -Fond route '
   rebelsThoughtsIfSuccess: Le gouvernement est autoritaire
   rebelsThoughtsIfFailure: Le gouvernement ment...
-  missionProps: []
+  missionProps:
+  - prop: 19
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 28
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 30
+    dictatorPoints: 100
+    rebelsPoints: 150
+  - prop: 21
+    dictatorPoints: 100
+    rebelsPoints: 100

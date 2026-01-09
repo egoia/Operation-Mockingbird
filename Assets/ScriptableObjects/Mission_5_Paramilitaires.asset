@@ -19,7 +19,7 @@ MonoBehaviour:
     que toutes les personnes impliqu\xE9es dans ces actes seront neutralis\xE9es
     conform\xE9ment \xE0 la loi. Aucune tol\xE9rance ne sera accord\xE9e \xE0 ces
     criminels."
-  dictatorOrdre: '- Terroriste armee 3+ - Civil mort 4+ - Scene ville '
+  dictatorOrdre: '- Terroriste armee - Civil mort  - Scene ville '
   dictatorThoughtsIfSuccess: Notre gouvernment aime la democratie
   dictatorThoughtsIfFailure: Si ceci continue on va devoir s'occuper de Nopasaran
   rebelNouvelle: " Une enqu\xEAte r\xE9cente men\xE9e par nos journalistes r\xE9v\xE8le
@@ -29,8 +29,26 @@ MonoBehaviour:
     du pays. Par ailleurs, d\u2019anciens participants  de Muymalvado affirment que
     On\xE8melargant aurait, au moins en partie, contribu\xE9 au financement de cette
     organisation paramilitaire."
-  rebelOrdre: '- Militaires armee 3+ -Dirigeant -Buisnessman - Civil mort 4+ - Scene
+  rebelOrdre: '- Militaires armee  -Dirigeant -Buisnessman - Civil mort  - Scene
     ville '
   rebelsThoughtsIfSuccess: C'est claire aue ce gouvernement doit demisioner
   rebelsThoughtsIfFailure: Le facisme a gagne
-  missionProps: []
+  missionProps:
+  - prop: 28
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 12
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 21
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 27
+    dictatorPoints: 0
+    rebelsPoints: 100
+  - prop: 1
+    dictatorPoints: 0
+    rebelsPoints: 100
+  - prop: 33
+    dictatorPoints: 0
+    rebelsPoints: 100

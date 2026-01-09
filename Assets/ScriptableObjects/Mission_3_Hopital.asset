@@ -21,8 +21,8 @@ MonoBehaviour:
     grande prudence et dans le respect des protocoles de s\xE9curit\xE9, les \xE9quipes
     m\xE9dicales ayant \xE9t\xE9 pr\xE9alablement alert\xE9es afin de limiter les
     risques."
-  dictatorOrdre: '- Des terroristes 3+ - fond hopital - Medecins armee 2+ - Des arme
-    a feu 3+ '
+  dictatorOrdre: '- Des terroristes  - fond hopital - Medecins armee  - Des arme
+    a feu  '
   dictatorThoughtsIfSuccess: Notre gouvernement est le plus libre du monde
   dictatorThoughtsIfFailure: Les woke veulent corrompre les jeunes
   rebelNouvelle: " C\u2019est \xE0 la fois tragique et choquant : le gouvernement
@@ -33,7 +33,31 @@ MonoBehaviour:
     si une telle pr\xE9sence devait exister, l\u2019h\xF4pital continue de fonctionner
     pour les civils de la r\xE9gion, ce qui ne justifie en aucun cas une attaque
     aussi indiscrimin\xE9e et impr\xE9cise. "
-  rebelOrdre: '- Medecins 2+ - Blessee 2+ - Patiens - Fauteuille roulant - Fond hopital '
+  rebelOrdre: '- Medecins  - Blessee  - Patiens - Fauteuille roulant - Fond hopital '
   rebelsThoughtsIfSuccess: On gagnera la guerre mediatique
   rebelsThoughtsIfFailure: Notre pays s'effondre
-  missionProps: []
+  missionProps:
+  - prop: 28
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 8
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 31
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 18
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 32
+    dictatorPoints: 0
+    rebelsPoints: 100
+  - prop: 12
+    dictatorPoints: 0
+    rebelsPoints: 100
+  - prop: 1
+    dictatorPoints: 0
+    rebelsPoints: 100
+  - prop: 1
+    dictatorPoints: 0
+    rebelsPoints: 100

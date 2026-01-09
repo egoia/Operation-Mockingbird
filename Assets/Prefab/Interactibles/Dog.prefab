@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba81522061bc3144a7c071d30090060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhotoPropComponent
-  prop: 0
+  prop: 19
 --- !u!1 &5362884208944538217
 GameObject:
   m_ObjectHideFlags: 0

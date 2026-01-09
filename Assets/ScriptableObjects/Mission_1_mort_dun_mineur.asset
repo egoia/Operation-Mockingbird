@@ -20,8 +20,8 @@ MonoBehaviour:
     homme s\u2019est malheureusement r\xE9v\xE9l\xE9e in\xE9vitable. Le gouvernement
     exprime son profond regret et Il assure  la poursuite des actions n\xE9cessaires
     en vue du d\xE9sarmement complet de cette milice"
-  dictatorOrdre: "- Enfant avec un fusil / arme - Terroristes arm\xE9s 2+ - Militaires
-    arm\xE9e 2+ - Fond ville "
+  dictatorOrdre: "- Enfant avec un fusil / arme - Terroristes arm\xE9s - Militaires
+    arm\xE9e  - Fond ville "
   dictatorThoughtsIfSuccess: Credit score UP+++
   dictatorThoughtsIfFailure: Credit score Down++
   rebelNouvelle: "Des habitants de Soycampesino d\xE9noncent le comportement qu\u2019ils
@@ -30,16 +30,22 @@ MonoBehaviour:
     une altercation avec un groupe de mineurs, une situation qui s\u2019est progressivement
     aggrav\xE9e jusqu\u2019\xE0 une agression qui est devenue mortelle contre l\u2019un
     d\u2019eux, per\xE7ue comme une d\xE9monstration de pouvoir."
-  rebelOrdre: "- Enfants  - Militaires arm\xE9e 2+ - Fond ville "
+  rebelOrdre: "- Enfants  - Militaires arm\xE9e  - Fond ville "
   rebelsThoughtsIfSuccess: Arriba!!!
   rebelsThoughtsIfFailure: El pueblo decepcionado
   missionProps:
-  - prop: 0
+  - prop: 27
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 26
     dictatorPoints: 0
+    rebelsPoints: 200
+  - prop: 21
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 29
+    dictatorPoints: 100
     rebelsPoints: 0
-  - prop: 0
-    dictatorPoints: 0
-    rebelsPoints: 0
-  - prop: 0
-    dictatorPoints: 0
+  - prop: 28
+    dictatorPoints: 100
     rebelsPoints: 0

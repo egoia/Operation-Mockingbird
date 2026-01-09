@@ -22,7 +22,7 @@ MonoBehaviour:
     notre industrie. Le dirigeant supr\xEAme, pr\xE9sent lors de la r\xE9union, affirme
     que les discussions portaient sur la protection des familles, des enfants et
     la s\xE9curit\xE9 des villes face \xE0 la menace terroriste."
-  dictatorOrdre: 'Business mans 2+ Famille fond Bureaux '
+  dictatorOrdre: 'Business mans  Famille fond Bureaux '
   dictatorThoughtsIfSuccess: Notre gouvernement est le plus morale
   dictatorThoughtsIfFailure: On ne lacher pas ce reseaux de desinformation
   rebelNouvelle: "Nos journalistes ont re\xE7u un enregistrement audio authentifi\xE9,
@@ -35,7 +35,19 @@ MonoBehaviour:
     sur notre territoire. Par ailleurs, plusieurs paysans vivant \xE0 proximit\xE9
     de Soycampesino affirment avoir observ\xE9 des convois de camions de la marque
     Chocolat de Mathilde.  "
-  rebelOrdre: 'Business mans 2+ fond Bureaux Or, Argent '
+  rebelOrdre: 'Business mans  fond Bureaux  Argent '
   rebelsThoughtsIfSuccess: 'Adieux aux capital '
   rebelsThoughtsIfFailure: La vie vaux plus rien
-  missionProps: []
+  missionProps:
+  - prop: 33
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 26
+    dictatorPoints: 100
+    rebelsPoints: 0
+  - prop: 24
+    dictatorPoints: 100
+    rebelsPoints: 100
+  - prop: 20
+    dictatorPoints: 0
+    rebelsPoints: 100
