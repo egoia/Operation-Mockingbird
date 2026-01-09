@@ -6,6 +6,7 @@ using static Mission;
 public class PhotoZone : MonoBehaviour
 {
     List<PhotoProp> inside = new List<PhotoProp>();
+    public DisplayImage3D greenscreen;
     public List<PhotoProp> GetAllProps()
     {
         List<PhotoProp> insideUnique = new List<PhotoProp>();
@@ -13,6 +14,7 @@ public class PhotoZone : MonoBehaviour
         {
             if(!insideUnique.Contains(item))insideUnique.Add(item);
         }
+        insideUnique.Add(greenscreen.GetProp());
         return insideUnique;
     }
 
@@ -21,13 +23,11 @@ public class PhotoZone : MonoBehaviour
     {
         PhotoPropComponent item = other.GetComponent<PhotoPropComponent>();
         if (item != null) inside.Add(item.prop);
-        Debug.Log("enter");
     }
 
     void OnTriggerExit(Collider other)
     {
         PhotoPropComponent item = other.GetComponent<PhotoPropComponent>();
         if (item != null) inside.Remove(item.prop);
-        Debug.Log("Exit");
     }
 }

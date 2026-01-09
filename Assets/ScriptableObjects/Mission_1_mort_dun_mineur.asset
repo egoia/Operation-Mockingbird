@@ -33,4 +33,13 @@ MonoBehaviour:
   rebelOrdre: "- Enfants  - Militaires arm\xE9e 2+ - Fond ville "
   rebelsThoughtsIfSuccess: Arriba!!!
   rebelsThoughtsIfFailure: El pueblo decepcionado
-  missionProps: []
+  missionProps:
+  - prop: 0
+    dictatorPoints: 0
+    rebelsPoints: 0
+  - prop: 0
+    dictatorPoints: 0
+    rebelsPoints: 0
+  - prop: 0
+    dictatorPoints: 0
+    rebelsPoints: 0

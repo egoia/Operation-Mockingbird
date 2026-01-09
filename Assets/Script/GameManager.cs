@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public List<Mission> missions;
     public GameObject clipBoardDictator;
     public GameObject clipBoardRebels;
+    public GameObject baseClipboard;
     public GameObject spawnPosition;
     public GameObject player;
 
@@ -22,9 +23,9 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        LoadClipboard("", "");
+        LoadClipboard("", "", "Suite à l'apparition des groupes terroristes  dans un village rural déconnecté des grandes villes et  d'organismes étatiques, la zone a été déclarée comme une menace par l'État. Depuis cela, une guerre civile à éclaté entre le gouvernement et un groupe armée de résistants");
         player.transform.position = spawnPosition.transform.position;
-        ui.fadeInTransition();
+        ui.fadeInNOutTransition();
     }
 
     public void TakePhoto()
@@ -32,11 +33,12 @@ public class GameManager : MonoBehaviour
         ui.fadeInNOutTransition();
         string rebelsThoughts = "";
         string dictatorThoughts = "";
-        missions[missionIndex].CalculScore(photoZone.GetAllProps(), ref dictatorThoughts, ref rebelsThoughts);
+        string journal = "";
+        missions[missionIndex].CalculScore(photoZone.GetAllProps(), ref dictatorThoughts, ref rebelsThoughts, ref journal);
         photoCamera.Capture();
         //photo
         missionIndex++;
-        LoadClipboard(dictatorThoughts, rebelsThoughts);
+        LoadClipboard(dictatorThoughts, rebelsThoughts, journal);
         clipBoardDictator.GetComponent<Interactable>().Respawn();
         clipBoardRebels.GetComponent<Interactable>().Respawn();
         if (missionIndex > missions.Count)
@@ -46,11 +48,16 @@ public class GameManager : MonoBehaviour
         player.transform.position = spawnPosition.transform.position;
     }
 
-    void LoadClipboard( string dictatorthoughts, string rebelsthoughts)
+    void LoadClipboard( string dictatorthoughts, string rebelsthoughts, string journal)
     {
         Mission current = missions[missionIndex];
-        //clipBoardDictator.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.dictatorTitle, current.dictatorMissionOrder, dictatorthoughts);
-        //clipBoardRebels.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.rebelTitle, current.rebelsMissionOrder, rebelsthoughts);
+        clipBoardDictator.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.dictatorNouvelle, current.dictatorOrdre, dictatorthoughts);
+        clipBoardDictator.GetComponent<Interactable>().Respawn();
+
+        clipBoardRebels.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.rebelNouvelle, current.rebelOrdre, rebelsthoughts);
+        clipBoardRebels.GetComponent<Interactable>().Respawn();
+
+        baseClipboard.GetComponent<BaseClipboard>().SetOrder(journal);
     }
 
     void GameOver()
