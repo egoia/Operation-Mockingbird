@@ -54,7 +54,7 @@ public class Dummy : MonoBehaviour
                 }
             }
         }
-        changePhotProp();
+        changePhotoProp();
     }
 
     public void ChangeMesh(InputAction.CallbackContext context)
@@ -78,24 +78,55 @@ public class Dummy : MonoBehaviour
         if (poses.Count != posesType.Count) return;
         if (meshes.Count != meshType.Count) return;
         //si défaut on prend w/ever is dans posestype
-        if (meshType[meshIndex] == PhotoProp.CIVILIAN)
+        if (meshType[meshIndex] == PhotoProp.DOCTOR)
+        {
+            propValue = PhotoProp.DOCTOR;
+        }
+        if (meshType[meshIndex] == PhotoProp.BUISNESSMAN)
+        {
+            propValue = PhotoProp.BUISNESSMAN;
+        }
+        if (meshType[meshIndex] == PhotoProp.CIVILIAN || (meshType[meshIndex] == PhotoProp.ENFANT))
         {
             propValue = posesType[index];
         }
         //si mort on prend l'équivalent mort du mesh
-        else if (posesType[index] == PhotoProp.DEAD_CIVILIAN)
+        if (posesType[index] == PhotoProp.DEAD_CIVILIAN)
         {
             if (meshType[meshIndex] == PhotoProp.POLICE_MAN)
             {
                 propValue = PhotoProp.DEAD_SOLDIER;
             }
-            if (meshType[meshIndex] == PhotoProp.CIVILIAN)
+            if (meshType[meshIndex] == PhotoProp.CIVILIAN || (meshType[meshIndex] == PhotoProp.ENFANT))
             {
                 propValue = PhotoProp.DEAD_CIVILIAN;
             }
             if (meshType[meshIndex] == PhotoProp.SOLDIER)
             {
                 propValue = PhotoProp.DEAD_SOLDIER;
+            }
+        }
+        if (posesType[index] == PhotoProp.WEAPON)
+        {
+            if (meshType[meshIndex] == PhotoProp.POLICE_MAN)
+            {
+                propValue = PhotoProp.ARMED_OFFICER;
+            }
+            if (meshType[meshIndex] == PhotoProp.ENFANT)
+            {
+                propValue = PhotoProp.ARMED_CHILDREN;
+            }
+            if (meshType[meshIndex] == PhotoProp.DOCTOR)
+            {
+                propValue = PhotoProp.ARMED_DOCTOR;
+            }
+            if (meshType[meshIndex] == PhotoProp.CIVILIAN)
+            {
+                propValue = PhotoProp.ARMED_CIVILIAN;
+            }
+            if (meshType[meshIndex] == PhotoProp.SOLDIER)
+            {
+                propValue = PhotoProp.ARMED_SOLDIER;
             }
         }
         //si soldat
