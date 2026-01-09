@@ -115,7 +115,7 @@ public partial class @Test: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""1e014e5d-cabf-4ac8-8ce0-5cd3ce16d47b"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<OculusTouchController>/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -126,7 +126,7 @@ public partial class @Test: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""87a75817-68c0-49ac-9891-85a356841822"",
-                    ""path"": ""<Keyboard>/n"",
+                    ""path"": ""<OculusTouchController>/secondaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

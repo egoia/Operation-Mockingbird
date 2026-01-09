@@ -6,19 +6,21 @@ using UnityEngine.InputSystem;
 public class Dummy : MonoBehaviour
 {
     Animator animator;
-    SkinnedMeshRenderer meshRenderer;
+    List<SkinnedMeshRenderer> meshRenderer = new List<SkinnedMeshRenderer>();
     public List<AnimationClip> poses;
     int index = 0;
     public List<GameObject> additionalProp;
     public List<int> propPosNb;
     Test inputActions;
+    bool hovered = false;
 
     [SerializeField] List<Mesh> meshes;
     private int meshIndex;
 
     void Start()
     {
-        meshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        meshRenderer.Add(transform.GetChild(0).GetComponent<SkinnedMeshRenderer>());
+        meshRenderer.Add(transform.GetChild(1).GetComponent<SkinnedMeshRenderer>());
         animator = GetComponent<Animator>();
         animator.applyRootMotion = false;
 
@@ -31,6 +33,7 @@ public class Dummy : MonoBehaviour
 
     void ChangePos(InputAction.CallbackContext context)
     {
+       if (!hovered) return;
         index++;
         index%= poses.Count;
         animator.Play(poses[index].name);
@@ -50,12 +53,19 @@ public class Dummy : MonoBehaviour
 
     public void ChangeMesh(InputAction.CallbackContext context)
     {
-       
+       if (!hovered) return;
         meshIndex++;
         meshIndex %= meshes.Count;
-        meshRenderer.sharedMesh = meshes[meshIndex];
+        foreach (SkinnedMeshRenderer renderer in meshRenderer) {
+            renderer.sharedMesh = meshes[meshIndex];
+        }
 
 
+    }
+
+    public void isTargeted(bool target)
+    {
+        hovered = target;
     }
 
 }
