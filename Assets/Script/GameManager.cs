@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject spawnPosition;
     public GameObject player;
 
+    public UI_Animation_Controller ui;
+
     void Awake()
     {
          Instance = this;
@@ -22,10 +24,12 @@ public class GameManager : MonoBehaviour
     {
         LoadClipboard("", "");
         player.transform.position = spawnPosition.transform.position;
+        ui.fadeInTransition();
     }
 
     public void TakePhoto()
     {
+        ui.fadeInNOutTransition();
         string rebelsThoughts = "";
         string dictatorThoughts = "";
         missions[missionIndex].CalculScore(photoZone.GetAllProps(), ref dictatorThoughts, ref rebelsThoughts);
@@ -40,7 +44,6 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
         player.transform.position = spawnPosition.transform.position;
-        Debug.Log("ahouuuuuuuuuuuuu");
     }
 
     void LoadClipboard( string dictatorthoughts, string rebelsthoughts)

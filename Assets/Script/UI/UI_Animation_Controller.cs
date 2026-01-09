@@ -22,6 +22,11 @@ public class UI_Animation_Controller : MonoBehaviour
         }
     }
 
+    public void fadeInNOutTransition()
+    {
+        StartCoroutine(InNOut());
+    }
+
     public void fadeInTransition()
     {
         StartCoroutine(obscuring());
@@ -30,6 +35,13 @@ public class UI_Animation_Controller : MonoBehaviour
     public void fadeOutTransition()
     {
         StartCoroutine(Unobscuring());
+    }
+
+    public IEnumerator InNOut()
+    {
+                yield return StartCoroutine(obscuring());
+                yield return new WaitForSeconds(1);
+                yield return StartCoroutine(Unobscuring());
     }
     private IEnumerator obscuring()
     {
