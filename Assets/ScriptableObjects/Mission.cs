@@ -18,15 +18,21 @@ public class Mission : ScriptableObject
         SOLDIER, CIVILIAN, REBEL, VILLAGE, FARM, POLICE_MAN, ANIMAL, FIRE, HOSPITAL, FLAG_DICTATOR, FLAG_REBEL, 
         AMMO_BOX, DEAD_CIVILIAN, DEAD_SOLDIER, FOOD, ALCOOL, WHEEL_CHAIR, MEDICINE, WEAPON, DOG, MONEY
     }
-    public string dictatorTitle;
-    public string rebelTitle;
-    public string dictatorMissionOrder;
-    public string rebelsMissionOrder;
-    
+
+    [Header("Dictateur")]
+    public string dictatorNouvelle;
+    public string dictatorOrdre;
+
     public string dictatorThoughtsIfSuccess;
+    public string dictatorThoughtsIfFailure;
+
+
+    [Header("Rebels")]
+    public string rebelNouvelle;
+    public string rebelOrdre;
+
     public string rebelsThoughtsIfSuccess;
     public string rebelsThoughtsIfFailure;
-    public string dictatorThoughtsIfFailure;
 
     public List<MissionProp> missionProps;
 
