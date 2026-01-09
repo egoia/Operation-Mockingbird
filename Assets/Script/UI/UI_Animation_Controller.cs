@@ -40,7 +40,7 @@ public class UI_Animation_Controller : MonoBehaviour
     public IEnumerator InNOut()
     {
                 yield return StartCoroutine(obscuring());
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(1f);
                 yield return StartCoroutine(Unobscuring());
     }
     private IEnumerator obscuring()

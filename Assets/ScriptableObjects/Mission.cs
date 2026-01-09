@@ -16,7 +16,8 @@ public class Mission : ScriptableObject
     public enum PhotoProp
     {
         SOLDIER, CIVILIAN, REBEL, VILLAGE, FARM, POLICE_MAN, ANIMAL, FIRE, HOSPITAL, FLAG_DICTATOR, FLAG_REBEL, 
-        AMMO_BOX, DEAD_CIVILIAN, DEAD_SOLDIER, FOOD, ALCOOL, WHEEL_CHAIR, MEDICINE, WEAPON, DOG, MONEY, STREET, DRUG_FIELD, SCHOOL, HOUSE, STORE
+        AMMO_BOX, DEAD_CIVILIAN, DEAD_SOLDIER, FOOD, ALCOOL, WHEEL_CHAIR, MEDICINE, WEAPON, DOG, MONEY, STREET, DRUG_FIELD, SCHOOL, HOUSE, STORE,
+        ENFANT
     }
 
     [Header("Dictateur")]
@@ -37,7 +38,7 @@ public class Mission : ScriptableObject
     public List<MissionProp> missionProps;
 
 
-    public void CalculScore(List<PhotoProp> props, ref string dictatorThoughts, ref string rebelsThoughts)
+    public void CalculScore(List<PhotoProp> props, ref string dictatorThoughts, ref string rebelsThoughts, ref string journal)
     {
         int dictatorScore = 0;
         int rebelsScore = 0;
@@ -51,11 +52,13 @@ public class Mission : ScriptableObject
         {
             dictatorThoughts = dictatorThoughtsIfSuccess;
             rebelsThoughts = rebelsThoughtsIfFailure;
+            journal = dictatorNouvelle;
         }
         else if(dictatorScore < rebelsScore)
         {
             dictatorThoughts = dictatorThoughtsIfFailure;
             rebelsThoughts = rebelsThoughtsIfSuccess;
+            journal = rebelNouvelle;
         }
         else
         {

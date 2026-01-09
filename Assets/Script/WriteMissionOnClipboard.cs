@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class WriteMissionOnClipboard : MonoBehaviour
 {
-    public TextMeshPro textMeshProOrder;
-    public TextMeshPro textMeshProTitleRecap;
-    public TextMeshPro textMeshProRecap;
-    public TextMeshPro textMeshProTitle;
+    public TextMeshPro demande;
+    public TextMeshPro order;
+    public TextMeshPro title;
+    public TextMeshPro thoughts;
+    public TextMeshPro titreThoughts;
 
-    private string recapText = "R�cap";
 
 
-    public void ChangeMission(string missionTitle, string missionOrder, string thoughts)
+    public void ChangeMission(string missionOrder, string demande , string thoughts)
     {
-
-        textMeshProTitle.text = missionTitle;
-        textMeshProOrder.text = missionOrder;
-        textMeshProTitleRecap.text = thoughts == "" ? "" : recapText;
-        textMeshProRecap.text = thoughts;
-        
+        order.text = missionOrder;
+        this.thoughts.text = thoughts; 
+        this.demande.text = demande;
+        if(thoughts =="")titreThoughts.gameObject.SetActive(false);
     }
 }
