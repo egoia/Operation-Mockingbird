@@ -18,7 +18,8 @@ public class UI_Animation_Controller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            fadeInTransition();
+            //fadeInTransition();
+            fadeOutTransition();
         }
     }
 
