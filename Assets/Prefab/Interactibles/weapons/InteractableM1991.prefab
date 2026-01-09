@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 2594260795820936577}
   - component: {fileID: 6428806013252952718}
   - component: {fileID: 348763204642425642}
+  - component: {fileID: 4272147401327552929}
   m_Layer: 0
   m_Name: InteractableM1991
   m_TagString: Untagged
@@ -675,6 +676,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hover
   outline: {fileID: 6947973451504535940}
+--- !u!114 &4272147401327552929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9219510220196669135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81522061bc3144a7c071d30090060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoPropComponent
+  prop: 18
 --- !u!1001 &3651511542323062950
 PrefabInstance:
   m_ObjectHideFlags: 0

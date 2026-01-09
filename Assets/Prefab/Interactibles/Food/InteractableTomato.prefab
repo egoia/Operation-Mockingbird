@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 2594260795820936577}
   - component: {fileID: 6428806013252952718}
   - component: {fileID: 414538773808791091}
+  - component: {fileID: 8716130933822705464}
   m_Layer: 0
   m_Name: InteractableTomato
   m_TagString: Untagged
@@ -675,6 +676,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hover
   outline: {fileID: 4506211372209043898}
+--- !u!114 &8716130933822705464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9219510220196669135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81522061bc3144a7c071d30090060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoPropComponent
+  prop: 14
 --- !u!1001 &1264495825001739973
 PrefabInstance:
   m_ObjectHideFlags: 0

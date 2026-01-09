@@ -5,11 +5,10 @@ public class DisplayImage3D : MonoBehaviour
     public Texture2D[] textures;
     private int currentIndex = 0;
 
-    private Renderer r;
+    public Renderer r;
 
     void Start()
     {
-        r = GetComponent<Renderer>();
 
         if (textures.Length == 0)
         {

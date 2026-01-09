@@ -16,7 +16,7 @@ public class Mission : ScriptableObject
     public enum PhotoProp
     {
         SOLDIER, CIVILIAN, REBEL, VILLAGE, FARM, POLICE_MAN, ANIMAL, FIRE, HOSPITAL, FLAG_DICTATOR, FLAG_REBEL, 
-        AMMO_BOX, DEAD_CIVILIAN, DEAD_SOLDIER
+        AMMO_BOX, DEAD_CIVILIAN, DEAD_SOLDIER, FOOD, ALCOOL, WHEEL_CHAIR, MEDICINE, WEAPON, DOG, MONEY
     }
     public string dictatorTitle;
     public string rebelTitle;

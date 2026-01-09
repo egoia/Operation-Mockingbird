@@ -6,6 +6,8 @@ public class Button_Controller : MonoBehaviour
     private BoxCollider myBXC;
     public Rigidbody rb; 
     private bool pressed = false;
+    public bool isGreenScreen = false;
+    public DisplayImage3D greenScreen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,8 +27,8 @@ public class Button_Controller : MonoBehaviour
         if (pressed) { return; }
         pressed = true;
 
-        GameManager.Instance.TakePhoto();
-        Debug.Log("ahiiiiiiiiiii");
+        if(isGreenScreen) greenScreen.NextTexture();
+        else GameManager.Instance.TakePhoto();
     }
 
     private void OnCollisionExit(Collision collision)

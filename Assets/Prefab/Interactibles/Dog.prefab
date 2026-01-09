@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 7063212057311986588}
   - component: {fileID: 7547616929004708152}
   - component: {fileID: 2175202340505928677}
+  - component: {fileID: -8657628162706486288}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -454,6 +455,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hover
   outline: {fileID: 4339516687307836018}
+--- !u!114 &-8657628162706486288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959926173374138418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81522061bc3144a7c071d30090060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhotoPropComponent
+  prop: 0
 --- !u!1 &5362884208944538217
 GameObject:
   m_ObjectHideFlags: 0
