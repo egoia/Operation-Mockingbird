@@ -1,8 +1,16 @@
+using System;
 using UnityEngine;
+using static Mission;
 
 public class DisplayImage3D : MonoBehaviour
 {
-    public Texture2D[] textures;
+    [Serializable]
+    public class Background
+    {
+        public Texture2D texture;
+        public PhotoProp prop;
+    }
+    public Background[] backgroundImages;
     private int currentIndex = 0;
 
     public Renderer r;
@@ -10,14 +18,14 @@ public class DisplayImage3D : MonoBehaviour
     void Start()
     {
 
-        if (textures.Length == 0)
+        if (backgroundImages.Length == 0)
         {
             return;
         }
 
         Shader shader = Shader.Find("Universal Render Pipeline/Lit");
         r.material = new Material(shader);
-        r.material.mainTexture = textures[currentIndex];
+        r.material.mainTexture = backgroundImages[currentIndex].texture;
     }
 
     private void Update()
@@ -34,18 +42,23 @@ public class DisplayImage3D : MonoBehaviour
     /// </summary>
     public void NextTexture()
     {
-        if (textures.Length == 0)
+        if (backgroundImages.Length == 0)
         {
             return;
         }
 
         ++currentIndex;
-        if (currentIndex >= textures.Length)
+        if (currentIndex >= backgroundImages.Length)
         {
             currentIndex = 0;
         }
 
-        r.material.mainTexture = textures[currentIndex];
+        r.material.mainTexture = backgroundImages[currentIndex].texture;
+    }
+
+    public PhotoProp GetProp()
+    {
+        return backgroundImages[currentIndex].prop;
     }
 
     /*
@@ -54,7 +67,7 @@ public class DisplayImage3D : MonoBehaviour
     /// </summary>
     public void PreviousTexture()
     {
-        if (textures.Length == 0)
+        if (backgroundImage.Length == 0)
         {
             return;
         }
@@ -62,10 +75,10 @@ public class DisplayImage3D : MonoBehaviour
         --currentIndex;
         if (currentIndex < 0)
         {
-            currentIndex = textures.Length - 1;
+            currentIndex = backgroundImage.Length - 1;
         }
 
-        r.material.mainTexture = textures[currentIndex];
+        r.material.mainTexture = backgroundImage[currentIndex];
     }
     */
 }
