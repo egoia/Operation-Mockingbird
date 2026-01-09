@@ -49,8 +49,8 @@ public class GameManager : MonoBehaviour
     void LoadClipboard( string dictatorthoughts, string rebelsthoughts)
     {
         Mission current = missions[missionIndex];
-        clipBoardDictator.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.dictatorTitle, current.dictatorMissionOrder, dictatorthoughts);
-        clipBoardRebels.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.rebelTitle, current.rebelsMissionOrder, rebelsthoughts);
+        //clipBoardDictator.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.dictatorTitle, current.dictatorMissionOrder, dictatorthoughts);
+        //clipBoardRebels.GetComponent<WriteMissionOnClipboard>().ChangeMission(current.rebelTitle, current.rebelsMissionOrder, rebelsthoughts);
     }
 
     void GameOver()

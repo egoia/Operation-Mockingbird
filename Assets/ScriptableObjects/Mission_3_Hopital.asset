@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
+  m_Name: Mission_3_Hopital
+  m_EditorClassIdentifier: Assembly-CSharp::Mission
+  dictatorNouvelle: "Des groupes terroristes qui r\xE9pandent la terreur ont \xE9t\xE9
+    identifi\xE9s au sein d\u2019infrastructures hospitali\xE8res , utilisant  ceux
+    ci comme des bases et la population civile comme bouclier humain. Le gouvernement
+    r\xE9affirme sa d\xE9termination totale \xE0 neutraliser ces ennemis de la nation
+    et rappelle qu\u2019aucune n\xE9gociation se fait avec des  terroristes. Les
+    mesures r\xE9cemment mises en \u0153uvre ont \xE9t\xE9 conduites avec la plus
+    grande prudence et dans le respect des protocoles de s\xE9curit\xE9, les \xE9quipes
+    m\xE9dicales ayant \xE9t\xE9 pr\xE9alablement alert\xE9es afin de limiter les
+    risques."
+  dictatorOrdre: '- Des terroristes 3+ - fond hopital - Medecins armee 2+ - Des arme
+    a feu 3+ '
+  dictatorThoughtsIfSuccess: Notre gouvernement est le plus libre du monde
+  dictatorThoughtsIfFailure: Les woke veulent corrompre les jeunes
+  rebelNouvelle: " C\u2019est \xE0 la fois tragique et choquant : le gouvernement
+    semble cibler des civils innocents, y compris des malades et des bless\xE9s.
+    Il n\u2019existe aucune preuve claire que l\u2019h\xF4pital serve de base pour
+    le groupe rebelle Dejenosempaz, au-del\xE0 de simples soup\xE7ons et de la pr\xE9sence
+    de quelques combattants bless\xE9s trait\xE9s dans le cadre du conflit. M\xEAme
+    si une telle pr\xE9sence devait exister, l\u2019h\xF4pital continue de fonctionner
+    pour les civils de la r\xE9gion, ce qui ne justifie en aucun cas une attaque
+    aussi indiscrimin\xE9e et impr\xE9cise. "
+  rebelOrdre: '- Medecins 2+ - Blessee 2+ - Patiens - Fauteuille roulant - Fond hopital '
+  rebelsThoughtsIfSuccess: On gagnera la guerre mediatique
+  rebelsThoughtsIfFailure: Notre pays s'effondre
+  missionProps: []

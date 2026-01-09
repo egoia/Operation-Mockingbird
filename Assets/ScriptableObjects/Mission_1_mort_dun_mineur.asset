@@ -12,12 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ccda068e36be84598d7bbb885bff14, type: 3}
   m_Name: Mission_1_mort_dun_mineur
   m_EditorClassIdentifier: Assembly-CSharp::Mission
-  dictatorTitle: i&ydgufciuzagf
-  rebelTitle: iyfg
-  dictatorMissionOrder: zrgb
-  rebelsMissionOrder: ergegdagregegre
-  dictatorThoughtsIfSuccess: r
-  rebelsThoughtsIfSuccess: eg
-  rebelsThoughtsIfFailure: rg
-  dictatorThoughtsIfFailure: eggr
+  dictatorNouvelle: "Quelques jour apr\xE8s l'arriv\xE9e de l\u2019arme au village
+    de Soycampesino  l'arm\xE9e a d\xFB se confronter \xE0 un verite grotesque, 
+    l\u2019utilisation d\u2019une milice d\u2019enfants par le groupe terroriste
+    nomm\xE9e les  \u201C Dejenosempaz\u201D. Lors d\u2019un affrontement intense
+    entre des groupes terroristes et nos forces de la libert\xE9, la mort de ce jeune
+    homme s\u2019est malheureusement r\xE9v\xE9l\xE9e in\xE9vitable. Le gouvernement
+    exprime son profond regret et Il assure  la poursuite des actions n\xE9cessaires
+    en vue du d\xE9sarmement complet de cette milice"
+  dictatorOrdre: "- Enfant avec un fusil / arme - Terroristes arm\xE9s 2+ - Militaires
+    arm\xE9e 2+ - Fond ville "
+  dictatorThoughtsIfSuccess: Credit score UP+++
+  dictatorThoughtsIfFailure: Credit score Down++
+  rebelNouvelle: "Des habitants de Soycampesino d\xE9noncent le comportement qu\u2019ils
+    qualifient d\u2019abusif et autoritaire des forces arm\xE9es d\xE9ploy\xE9es
+    dans leur village. Selon leurs t\xE9moignages, ces agissements ont provoqu\xE9
+    une altercation avec un groupe de mineurs, une situation qui s\u2019est progressivement
+    aggrav\xE9e jusqu\u2019\xE0 une agression qui est devenue mortelle contre l\u2019un
+    d\u2019eux, per\xE7ue comme une d\xE9monstration de pouvoir."
+  rebelOrdre: "- Enfants  - Militaires arm\xE9e 2+ - Fond ville "
+  rebelsThoughtsIfSuccess: Arriba!!!
+  rebelsThoughtsIfFailure: El pueblo decepcionado
   missionProps: []
