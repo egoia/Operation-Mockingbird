@@ -9,7 +9,7 @@ public class CameraCapture : MonoBehaviour
     public int fileCounter;
     public KeyCode screenshotKey;
     public Camera Camera;
-    public PhysiclImageController phImgController;
+    //public PhysiclImageController phImgController;
 
     void Start()
     {
@@ -48,11 +48,12 @@ public class CameraCapture : MonoBehaviour
 
         Directory.CreateDirectory(Application.dataPath + "/Resources");
 
-        string fileName = "Img" + fileCounter + ".png";
+        string fileName = fileCounter + ".png";
+        Debug.Log("?");
         File.WriteAllBytes(Application.dataPath + "/Resources/"+fileName, bytes);
         AssetDatabase.Refresh();
-
-        phImgController.setSprite(fileCounter);
+        Debug.Log("??");
+        //phImgController.setSprite(fileCounter);
         fileCounter++;
     }
 
