@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_Recovery/0 (1).unity.meta
+guid: e5b218e510df7fe4abcdd08c3196b874
+========
 guid: de07308b87a77d640bd2de80e35646c3
 folderAsset: yes
+>>>>>>>> origin/main:Assets/Font.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
